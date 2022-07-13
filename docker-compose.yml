@@ -1,0 +1,9 @@
+version: "3"
+services:
+  gas-build:
+    build: .
+    image: gas
+    container_name: "09_gas-06_notion-dailyTask"
+    tty: true
+    volumes:
+      - "./src:/opt/src"

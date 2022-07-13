@@ -1,0 +1,39 @@
+# GET https://example.com/comments/1 HTTP/1.1
+
+# ###
+
+# GET https://example.com/topics/1 HTTP/1.1
+
+# ###
+
+# POST https://example.com/comments HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "sample",
+#     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+# }
+
+
+POST  https://api.notion.com/v1/databases/aa17a6f243654f4b8c70efda87945103/query
+Notion-Version: 2021-08-16 xxxxxxxxxxxxxxxxxxxxxxxx
+
+# POST https://api.notion.com/v1/pages
+# Notion-Version: 2021-08-16 xxxxxxxxxxxxxxxxxxxxxxxx
+# content-type: application/json
+
+# {
+#   "parent": {
+#     "database_id": "aa17a6f243654f4b8c70efda87945103"
+#   },
+#   "properties": {
+#     "title": [
+#       {
+#         "text": {
+#           "content": "test-http"
+#         }
+#       }
+#     ]
+
+#   }
+# }
